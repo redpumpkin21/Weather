@@ -5,7 +5,10 @@ const Display = ({weather}) => {
 
             <div>
                 <p className="name">{weather.name}</p>
-                <h1 className="temp">{weather.temp}</h1>
+                <div className="temp">
+                    <h1>{weather.main.temp}</h1>
+                </div>
+                
                 <p className="descr">{weather.weather[0].description}</p>
     
             </div>
