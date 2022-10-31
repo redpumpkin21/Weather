@@ -4,9 +4,9 @@ const Display = ({weather}) => {
         return(
 
             <div>
-                <p>{weather.name}</p>
+                <p className="name">{weather.name}</p>
                 <h1 className="temp">{weather.temp}</h1>
-                <p>{weather.weather[0].description}</p>
+                <p className="descr">{weather.weather[0].description}</p>
     
             </div>
                
