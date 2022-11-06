@@ -4,7 +4,10 @@ const Display = ({weather}) => {
         return(
 
             <div>
-                <p className="name">{weather.name}</p>
+                <div >
+                    <p className="name">{weather.name}</p>
+                </div>
+                
                 <div className="temp">
                     <h1>{weather.main.temp}</h1>
                 </div>
