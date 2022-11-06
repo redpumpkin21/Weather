@@ -4,7 +4,7 @@ const Display = ({weather}) => {
         return(
 
             <div>
-                <div >
+                <div>
                     <p className="name">{weather.name}</p>
                 </div>
                 
