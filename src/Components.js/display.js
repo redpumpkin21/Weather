@@ -13,7 +13,6 @@ const Display = ({weather}) => {
                 </div>
                 
                 <p className="descr">{weather.weather[0].description}</p>
-    
             </div>
                
         )}    

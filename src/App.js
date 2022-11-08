@@ -3,7 +3,7 @@ import './App.css';
 import {useEffect, useState} from 'react'
 import Display from './Components.js/display';
 import Form from './Components.js/form';
-
+import Navar from './Components.js/Nav';
 function App() {
   const [weather, setWeather] = useState({})
   let apiKey = '11786cf53362e428a0695f06c5ece387'
@@ -18,6 +18,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <Navar />
         <Display weather={weather}/>
         <Form weatherSearch = {getWeather}/>
       </header>
