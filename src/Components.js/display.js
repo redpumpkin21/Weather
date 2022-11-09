@@ -3,7 +3,7 @@ const Display = ({weather}) => {
     const loaded = () => {
         return(
 
-            <div>
+            <div className="display">
                 <div>
                     <p className="name">{weather.name}</p>
                 </div>
@@ -17,7 +17,8 @@ const Display = ({weather}) => {
                
         )}    
     const loading = () => {
-        return <h1>Put in your Zip code to learn more</h1>
+        return <h3>Enter your Zip Code below to find out 
+            your weather for today!</h3>
     }
         return weather.weather ? loaded() : loading()
  }

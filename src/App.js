@@ -1,6 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
 import {useEffect, useState} from 'react'
+
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Display from './Components.js/display';
 import Form from './Components.js/form';
 import Navar from './Components.js/Nav';

@@ -9,7 +9,7 @@ import {
   NavLink,
 } from 'reactstrap';
 
-const Navar = (props) =>{
+function Navar(props) {
   const [collapsed, setCollapsed] = useState(true);
 
   const toggleNavbar = () => setCollapsed(!collapsed);
@@ -18,7 +18,7 @@ const Navar = (props) =>{
     <div>
       <Navbar color="faded" light>
         <NavbarBrand href="/" className="me-auto">
-          reactstrap
+          ZipWeather
         </NavbarBrand>
         <NavbarToggler onClick={toggleNavbar} className="me-2" />
         <Collapse isOpen={!collapsed} navbar>
