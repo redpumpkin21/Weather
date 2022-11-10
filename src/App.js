@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import {useEffect, useState} from 'react'
 import { Routes, Route } from 'react-router-dom';
@@ -22,11 +21,15 @@ function App() {
     <div className="App">
       <header className="App-header">
         <Navar />
-        <Display weather={weather}/>
-        <Form weatherSearch = {getWeather}/>
+        
+        {/* <Form weatherSearch = {getWeather}/> */}
         <Routes>
 
-         
+          <Route path = '/' element = {
+            <Display weather={weather} weatherSearch = {getWeather}/>
+          }>
+
+          </Route>
           <Route path="/about" element={
             <About />
           }></Route>

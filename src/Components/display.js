@@ -1,4 +1,6 @@
-const Display = ({weather}) => {
+import Form from "./form"
+
+const Display = ({weather, weatherSearch}) => {
     
     const loaded = () => {
         return(
@@ -17,8 +19,11 @@ const Display = ({weather}) => {
                
         )}    
     const loading = () => {
-        return <h3>Enter your Zip Code below to find out 
+        return <div>
+            <h3>Enter your Zip Code below to find out 
             your weather for today!</h3>
+            <Form weatherSearch={weatherSearch}/>
+            </div>
     }
         return weather.weather ? loaded() : loading()
  }
