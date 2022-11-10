@@ -24,10 +24,10 @@ function Navar(props) {
         <Collapse isOpen={!collapsed} navbar>
           <Nav navbar>
             <NavItem>
-              <NavLink href="/components/">Components</NavLink>
+              <NavLink href="/about">About</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="https://github.com/reactstrap/reactstrap">
+              <NavLink href="https://github.com/redpumpkin21/Weather">
                 GitHub
               </NavLink>
             </NavItem>

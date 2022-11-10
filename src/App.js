@@ -1,11 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
 import {useEffect, useState} from 'react'
-
+import { Routes, Route } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Display from './Components/display';
 import Form from './Components/form';
 import Navar from './Components/Nav';
+import About from './Pages/about';
 function App() {
   const [weather, setWeather] = useState({})
   let apiKey = '11786cf53362e428a0695f06c5ece387'
@@ -23,6 +24,13 @@ function App() {
         <Navar />
         <Display weather={weather}/>
         <Form weatherSearch = {getWeather}/>
+        <Routes>
+
+         
+          <Route path="/about" element={
+            <About />
+          }></Route>
+        </Routes>
       </header>
     </div>
   );
