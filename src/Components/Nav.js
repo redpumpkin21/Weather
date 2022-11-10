@@ -15,7 +15,7 @@ function Navar(props) {
   const toggleNavbar = () => setCollapsed(!collapsed);
 
   return (
-    <div>
+    <div className="navar">
       <Navbar color="faded" light>
         <NavbarBrand href="/" className="me-auto">
           ZipWeather

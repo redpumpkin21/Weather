@@ -1,6 +1,7 @@
 .App {
   text-align: center;
   min-height: 100vh;
+  background-color: #04BAF6;
 }
 
 /* .App-header {
@@ -18,19 +19,21 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App-header h3{
+  padding-top: 2em;
+}
+.navar {
+  background-color: #9D9B99;
 }
 
+.zip {
+  padding-top: 2em;
+}
 .display{
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 2em;
 }
 
 .temp{
@@ -46,7 +49,7 @@
 }
 
 .temp:hover{
-  transform: scale(1.5, 1.5);
+  transform: scale(1.2, 1.2);
 }
 
 .temp h1{
@@ -56,4 +59,8 @@
 .name {
   font-weight: bold;
   color: #61dafb;
+}
+
+.descr {
+  margin-top: 1em;
 }

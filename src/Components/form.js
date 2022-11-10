@@ -16,7 +16,7 @@ const Form = (props) => {
     }  
 
     return(
-        <form onSubmit = {handleSubmit} value ='Enter Zip Code'>
+        <form onSubmit = {handleSubmit} value ='Enter Zip Code' className="zip">
             <input placeHolder = "Enter Zip Code" type = "number" name="zipCode" value = {formData.zipCode} onChange= {handleChange}/>
             <button type ="submit">SEARCH ME</button>
         </form>
